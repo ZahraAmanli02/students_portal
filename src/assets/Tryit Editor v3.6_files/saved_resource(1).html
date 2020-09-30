@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://www.w3schools.com/css/tryit.asp?filename=trycss_float_boxes -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body contenteditable="false">
+
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color: ">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color: green">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color: yellow">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+
+
+</body></html>
